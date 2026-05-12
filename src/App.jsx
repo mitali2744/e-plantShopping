@@ -8,7 +8,6 @@ import {
 import ProductList from "./ProductList";
 import AboutUs from "./AboutUs";
 import CartItem from "./CartItem";
-import Portfolio from "./Portfolio";
 import "./App.css";
 
 function App() {
@@ -47,7 +46,6 @@ function App() {
               <Route path="/" element={<Navigate to="/product-list" replace />} />
               <Route path="/product-list" element={<ProductList />} />
               <Route path="/cart" element={<CartItem />} />
-              <Route path="/portfolio" element={<Portfolio />} />
               <Route path="*" element={<Navigate to="/product-list" replace />} />
             </Routes>
           </div>
